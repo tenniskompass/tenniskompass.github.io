@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tennis-Kompass | Der Ratgeber für Tennis-Eltern in Deutschland</title>
+<meta name="description" content="Tennis-Kompass führt Eltern durch alle Themen rund um Kindertennis: Schläger, Schuhe, Vereine, Liga.nu, Turniere und den Weg zum Profi.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Tennis-Kompass">
+<link rel="canonical" href="https://tenniskompass.de/">
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Tennis-Kompass">
+<meta property="og:title" content="Tennis-Kompass | Der Ratgeber für Tennis-Eltern in Deutschland">
+<meta property="og:description" content="Tennis-Kompass führt Eltern durch alle Themen rund um Kindertennis: Schläger, Schuhe, Vereine, Liga.nu, Turniere und den Weg zum Profi.">
+<meta property="og:url" content="https://tenniskompass.de/">
+<meta property="og:image" content="https://tenniskompass.de/bilder/og-default.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="bilder/favicon.svg">
+
+<!-- Fonts: Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS via CDN (für statisches Hosting) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          tennis: {
+            light: '#f0f5f1',
+            DEFAULT: '#264c31',
+            dark: '#183320',
+            ball: '#c5b969'
+          }
+        },
+        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+      }
+    }
+  }
+</script>
+
+<!-- Google AdSense Platzhalter, später eigene Publisher-ID einsetzen -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-DEINE_ID_HIER" crossorigin="anonymous"></script> -->
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; }
+  .prose-tk p { margin-bottom: 1rem; line-height: 1.75; }
+  .prose-tk h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem; color: #183320; }
+  .prose-tk ul { margin-bottom: 1rem; padding-left: 1.25rem; }
+  .prose-tk ul li { list-style: disc; margin-bottom: 0.25rem; }
+  .hover-lift { transition: transform .25s ease, box-shadow .25s ease; }
+  .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 12px 28px -8px rgba(0,0,0,.15); }
+  .card-img { transition: transform .5s ease; }
+  .group:hover .card-img { transform: scale(1.05); }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased flex flex-col min-h-screen">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Tennis-Kompass", "url": "https://tenniskompass.de", "description": "Deutschlands Ratgeber für Tennis-Eltern: Ausrüstung, Verein, Liga.nu, Turniere und der Weg zum Profi.", "inLanguage": "de-DE", "publisher": {"@type": "Organization", "name": "Tennis-Kompass", "url": "https://tenniskompass.de"}}</script>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
+    <a href="index.html" class="flex items-center gap-2" aria-label="Tennis-Kompass Startseite">
+      <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-tennis-dark text-tennis-ball font-extrabold">TK</span>
+      <span class="font-extrabold text-xl text-tennis-dark tracking-tight">Tennis-Kompass</span>
+    </a>
+    <nav class="hidden md:flex space-x-6 items-center font-medium" aria-label="Hauptnavigation">
+      <a href="index.html" class="text-tennis border-b-2 border-tennis pb-1">Startseite</a>
+      <a href="index.html#ratgeber" class="text-gray-600 hover:text-tennis transition pb-1">Ratgeber</a>
+      <a href="index.html#turniere" class="text-gray-600 hover:text-tennis transition pb-1">Turniere</a>
+      <a href="index.html#newsletter" class="bg-tennis text-white px-4 py-2 rounded-lg font-semibold hover:bg-tennis-dark transition">Newsletter</a>
+    </nav>
+    <button id="burger" class="md:hidden p-2 text-gray-600" aria-label="Menü öffnen">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-3">
+    <a href="index.html" class="block font-medium">Startseite</a>
+    <a href="index.html#ratgeber" class="block font-medium">Ratgeber</a>
+    <a href="index.html#turniere" class="block font-medium">Turniere</a>
+    <a href="index.html#newsletter" class="block font-semibold text-tennis">Newsletter</a>
+  </div>
+</header>
+<script>
+  document.getElementById('burger').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+
+
+<!-- Hero -->
+<section class="relative overflow-hidden bg-tennis-dark text-white">
+  <div class="absolute inset-0 opacity-25" aria-hidden="true">
+    <svg viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice" class="w-full h-full">
+      <defs>
+        <linearGradient id="court" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#b85a3c"/>
+          <stop offset="100%" stop-color="#5a2818"/>
+        </linearGradient>
+      </defs>
+      <rect width="1600" height="600" fill="url(#court)"/>
+      <g stroke="white" stroke-opacity="0.5" stroke-width="3" fill="none">
+        <rect x="280" y="120" width="1040" height="360"/>
+        <line x1="280" y1="300" x2="1320" y2="300"/>
+        <line x1="800" y1="120" x2="800" y2="480"/>
+        <line x1="540" y1="220" x2="1060" y2="220"/>
+        <line x1="540" y1="380" x2="1060" y2="380"/>
+      </g>
+    </svg>
+  </div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+    <span class="inline-block text-tennis-ball text-sm font-semibold tracking-widest uppercase mb-4">Tennis-Kompass</span>
+    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 max-w-4xl">
+      Der perfekte Start <span class="text-tennis-ball">für Ihr Kind</span>
+    </h1>
+    <p class="text-lg sm:text-xl text-gray-200 max-w-2xl leading-relaxed mb-8">
+      Vom ersten Schläger bis zum Mannschaftsspiel. Unser unabhängiger Ratgeber begleitet Tennis-Eltern in Deutschland durch Ausrüstung, Verein, Liga.nu, Turniere und mehr.
+    </p>
+    <div class="flex flex-wrap gap-3">
+      <a href="#ratgeber" class="bg-tennis-ball text-tennis-dark px-6 py-3 rounded-lg font-bold hover:bg-white transition shadow-lg">Ratgeber ansehen</a>
+      <a href="#turniere" class="bg-white/10 backdrop-blur border border-white/20 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition">Aktuelle Turniere</a>
+    </div>
+  </div>
+</section>
+
+<!-- Tournament Highlight -->
+<section id="turniere" class="bg-white border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="text-xs font-bold uppercase tracking-widest text-tennis">Nächstes Turnier</span>
+      <span class="text-xs text-gray-400">Live Countdown</span>
+    </div>
+    <div id="next-tournament" class="rounded-2xl overflow-hidden bg-gradient-to-br from-tennis-dark via-tennis to-tennis text-white shadow-xl">
+      <!-- filled by JS -->
+    </div>
+    <div id="more-tournaments" class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4"></div>
+  </div>
+</section>
+
+<!-- Article grid -->
+<section id="ratgeber" class="py-12 lg:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+      <div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-tennis-dark">Eltern-Ratgeber</h2>
+        <p class="text-gray-600 mt-2 max-w-2xl">Elf Themen, die jeden Tennis-Elternteil in den ersten drei Jahren beschäftigen. Klar geschrieben, ohne Marketingfloskeln.</p>
+      </div>
+      <a href="#newsletter" class="text-tennis font-semibold hover:underline">Newsletter abonnieren →</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <a href="kinderschlaeger.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+        <div class="relative aspect-[2/1] overflow-hidden bg-tennis-light">
+          <img src="bilder/kinderschlaeger.svg" alt="Kindertennisschläger auf rotem Sandplatz" class="card-img w-full h-full object-cover" loading="lazy">
+          <span class="absolute top-3 left-3 bg-white/95 text-tennis-dark text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Ausrüstung</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-tennis-dark group-hover:text-tennis transition mb-2">Den richtigen Kinderschläger finden</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Der erste eigene Schläger ist ein großer Moment. Die richtige Größe entscheidet darüber, ob Ihr Kind motiviert bleibt oder die Lust verliert.</p>
+          <span class="inline-block mt-3 text-tennis font-semibold text-sm">Weiterlesen →</span>
+        </div>
+      </a>
+      <a href="kinderschuhe.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+        <div class="relative aspect-[2/1] overflow-hidden bg-tennis-light">
+          <img src="bilder/kinderschuhe.svg" alt="Kindertennisschuhe auf Sandplatz mit Tennisball" class="card-img w-full h-full object-cover" loading="lazy">
+          <span class="absolute top-3 left-3 bg-white/95 text-tennis-dark text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Schuhe</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-tennis-dark group-hover:text-tennis transition mb-2">Tennisschuhe für Kinder richtig auswählen</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Der Unterschied zwischen einem normalen Sportschuh und einem Tennisschuh liegt in Stabilität, Sohle und Verstärkung. Für Kinder besonders wichtig wegen der schnellen Richtungswechsel.</p>
+          <span class="inline-block mt-3 text-tennis font-semibold text-sm">Weiterlesen →</span>
+        </div>
+      </a>
+      <a href="vereine.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+        <div class="relative aspect-[2/1] overflow-hidden bg-tennis-light">
+          <img src="bilder/vereine.svg" alt="Tennisclub Eingangsbereich am Sandplatz" class="card-img w-full h-full object-cover" loading="lazy">
+          <span class="absolute top-3 left-3 bg-white/95 text-tennis-dark text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Verein</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-tennis-dark group-hover:text-tennis transition mb-2">Tennisverein finden, deutschlandweit</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Tennis lebt vom Verein. Anders als beim Fußball gibt es kaum Schulsport mit Tennis, der erste Kontakt läuft fast immer über einen lokalen Verein.</p>
+          <span class="inline-block mt-3 text-tennis font-semibold text-sm">Weiterlesen →</span>
+        </div>
+      </a>
+      <a href="tennisschule.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+        <div class="relative aspect-[2/1] overflow-hidden bg-tennis-light">
+          <img src="bilder/tennisschule.svg" alt="Ballkorb auf Tennisplatz, Trainer und Kind im Hintergrund" class="card-img w-full h-full object-cover" loading="lazy">
+          <span class="absolute top-3 left-3 bg-white/95 text-tennis-dark text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Training</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-tennis-dark group-hover:text-tennis transition mb-2">Eine gute Tennisschule erkennen</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Trainerlizenz ist nicht gleich Trainerlizenz. Es lohnt sich, die Qualifikation und die Methodik genau anzuschauen.</p>
+          <span class="inline-block mt-3 text-tennis font-semibold text-sm">Weiterlesen →</span>
+        </div>
+      </a>
+      <a href="liganu.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+        <div class="relative aspect-[2/1] overflow-hidden bg-tennis-light">
+          <img src="bilder/liganu.svg" alt="Tablet mit Tennis-Ranglisten auf Holzbank" class="card-img w-full h-full object-cover" loading="lazy">
+          <span class="absolute top-3 left-3 bg-white/95 text-tennis-dark text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Organisation</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-tennis-dark group-hover:text-tennis transition mb-2">Liga.nu für Eltern verstehen</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Liga.nu ist die offizielle Plattform des DTB für Mannschaftsspiele. Hier finden Sie Spielpläne, Aufstellungen und Ergebnisse.</p>
+          <span class="inline-block mt-3 text-tennis font-semibold text-sm">Weiterlesen →</span>
+        </div>
+      </a>
+      <a href="medenspiele.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+        <div class="relative aspect-[2/1] overflow-hidden bg-tennis-light">
+          <img src="bilder/medenspiele.svg" alt="Vier Kinderschläger an einer Bank auf Sandplatz" class="card-img w-full h-full object-cover" loading="lazy">
+          <span class="absolute top-3 left-3 bg-white/95 text-tennis-dark text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Mannschaft</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-tennis-dark group-hover:text-tennis transition mb-2">Medenspiele und Aufstellung verstehen</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Medenspiele sind die Mannschaftsmeisterschaften im deutschen Tennis. Wer beim Fußball ist, kennt das nicht. Tennis spielt nicht jedes Wochenende, sondern nur etwa fünf bis sieben Spiele pro Saison.</p>
+          <span class="inline-block mt-3 text-tennis font-semibold text-sm">Weiterlesen →</span>
+        </div>
+      </a>
+      <a href="turniere.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+        <div class="relative aspect-[2/1] overflow-hidden bg-tennis-light">
+          <img src="bilder/turniere.svg" alt="Pokal auf rotem Sandplatz neben Linie" class="card-img w-full h-full object-cover" loading="lazy">
+          <span class="absolute top-3 left-3 bg-white/95 text-tennis-dark text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Turniere</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-tennis-dark group-hover:text-tennis transition mb-2">Turniere und Nenngeld</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Im Gegensatz zum Fußball gibt es im Tennis nicht jedes Wochenende ein Turnier. Wer mitspielen will, muss sich aktiv anmelden und Nenngeld zahlen.</p>
+          <span class="inline-block mt-3 text-tennis font-semibold text-sm">Weiterlesen →</span>
+        </div>
+      </a>
+      <a href="kosten.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+        <div class="relative aspect-[2/1] overflow-hidden bg-tennis-light">
+          <img src="bilder/kosten.svg" alt="Tennisschläger mit Euro-Münzen auf Sandplatz" class="card-img w-full h-full object-cover" loading="lazy">
+          <span class="absolute top-3 left-3 bg-white/95 text-tennis-dark text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Kosten</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-tennis-dark group-hover:text-tennis transition mb-2">Was Tennis für Kinder wirklich kostet</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Tennis ist nicht der teuerste Sport, aber auch nicht der günstigste. Wer ehrlich rechnet, kommt im ersten Jahr auf 600 bis 1500 Euro.</p>
+          <span class="inline-block mt-3 text-tennis font-semibold text-sm">Weiterlesen →</span>
+        </div>
+      </a>
+      <a href="familiencamps.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+        <div class="relative aspect-[2/1] overflow-hidden bg-tennis-light">
+          <img src="bilder/familiencamps.svg" alt="Reisekoffer mit Tennisschläger auf Sandplatz" class="card-img w-full h-full object-cover" loading="lazy">
+          <span class="absolute top-3 left-3 bg-white/95 text-tennis-dark text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Reisen</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-tennis-dark group-hover:text-tennis transition mb-2">Familien-Tennisurlaub und Camps</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Tennis-Camps verbinden Urlaub mit gezieltem Training. Die Auswahl ist riesig, die Qualitätsunterschiede auch.</p>
+          <span class="inline-block mt-3 text-tennis font-semibold text-sm">Weiterlesen →</span>
+        </div>
+      </a>
+      <a href="eltern-kodex.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+        <div class="relative aspect-[2/1] overflow-hidden bg-tennis-light">
+          <img src="bilder/eltern_kodex.svg" alt="Erwachsenenhand auf Schulter eines Kindes mit Schläger" class="card-img w-full h-full object-cover" loading="lazy">
+          <span class="absolute top-3 left-3 bg-white/95 text-tennis-dark text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Mentalität</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-tennis-dark group-hover:text-tennis transition mb-2">Der Eltern-Kodex am Spielfeldrand</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Der größte Fehler ist gut gemeintes Coaching von außen. Tennis ist ein Sport, in dem Kinder allein auf dem Platz Entscheidungen treffen müssen.</p>
+          <span class="inline-block mt-3 text-tennis font-semibold text-sm">Weiterlesen →</span>
+        </div>
+      </a>
+      <a href="tennisprofi.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm hover-lift">
+        <div class="relative aspect-[2/1] overflow-hidden bg-tennis-light">
+          <img src="bilder/tennisprofi.svg" alt="Silhouette eines jungen Tennisspielers im Sonnenuntergang" class="card-img w-full h-full object-cover" loading="lazy">
+          <span class="absolute top-3 left-3 bg-white/95 text-tennis-dark text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Karriere</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-tennis-dark group-hover:text-tennis transition mb-2">Der Weg zum Tennis-Profi</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Profi werden ist ein Marathon. Realistisch schaffen es weniger als 1 von 10000 Talenten in die Weltrangliste. Trotzdem ist der Weg dorthin oft wertvoll, auch wenn das Endziel nicht erreicht wird.</p>
+          <span class="inline-block mt-3 text-tennis font-semibold text-sm">Weiterlesen →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter / Lead Section -->
+<section id="newsletter" class="bg-tennis-light py-14">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-extrabold text-tennis-dark mb-3">Bleiben Sie informiert</h2>
+    <p class="text-gray-700 mb-6">Wenn Sie wollen, schreiben wir Sie an, sobald neue Artikel erscheinen. Keine Werbung, kein Spam.</p>
+    <form class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto" onsubmit="event.preventDefault(); alert('Newsletter-Anmeldung ist noch nicht aktiv. Bitte später erneut versuchen.');">
+      <input type="email" required placeholder="E-Mail-Adresse" class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-tennis">
+      <button class="bg-tennis text-white px-5 py-3 rounded-lg font-semibold hover:bg-tennis-dark transition">Anmelden</button>
+    </form>
+    <p class="text-xs text-gray-500 mt-3">Mit dem Absenden akzeptieren Sie unsere <a href="datenschutz.html" class="underline">Datenschutzerklärung</a>.</p>
+  </div>
+</section>
+
+<script>
+  const tournaments = [{"name": "French Open", "city": "Paris", "flag": "🇫🇷", "start": "2026-05-24", "end": "2026-06-07", "surface": "Sandplatz"}, {"name": "Wimbledon", "city": "London", "flag": "🇬🇧", "start": "2026-06-29", "end": "2026-07-12", "surface": "Rasen"}, {"name": "US Open", "city": "New York", "flag": "🇺🇸", "start": "2026-08-31", "end": "2026-09-13", "surface": "Hartplatz"}, {"name": "Australian Open 2027", "city": "Melbourne", "flag": "🇦🇺", "start": "2027-01-18", "end": "2027-01-31", "surface": "Hartplatz"}];
+  const now = new Date('2026-05-14');
+  // Sort: upcoming first
+  const upcoming = tournaments
+    .map(t => Object.assign({}, t, { startDate: new Date(t.start), endDate: new Date(t.end) }))
+    .sort((a,b) => a.startDate - b.startDate);
+
+  const next = upcoming[0];
+  const others = upcoming.slice(1);
+
+  function renderCountdown(target, until) {
+    function tick() {
+      const diff = until - new Date();
+      if (diff <= 0) { target.textContent = 'Läuft jetzt'; return; }
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      target.innerHTML = `<span class="text-3xl sm:text-5xl font-extrabold">${d}</span><span class="text-sm ml-1">Tage</span> <span class="text-2xl sm:text-3xl font-bold ml-3">${h}h ${m}min</span>`;
+    }
+    tick(); setInterval(tick, 60000);
+  }
+
+  const fmt = d => d.toLocaleDateString('de-DE', {day:'2-digit', month:'long', year:'numeric'});
+
+  document.getElementById('next-tournament').innerHTML = `
+    <div class="p-6 sm:p-10 grid md:grid-cols-2 gap-6 items-center">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-3xl">${next.flag}</span>
+          <span class="bg-tennis-ball text-tennis-dark text-xs font-bold px-2 py-1 rounded uppercase">Nächstes Grand Slam</span>
+        </div>
+        <h3 class="text-3xl sm:text-4xl font-extrabold mb-2">${next.name}</h3>
+        <p class="text-gray-200">${next.city} · ${next.surface}</p>
+        <p class="text-sm text-gray-300 mt-2">${fmt(next.startDate)} bis ${fmt(next.endDate)}</p>
+      </div>
+      <div class="bg-black/20 rounded-xl p-5">
+        <p class="text-xs uppercase tracking-wider text-tennis-ball font-semibold mb-2">Countdown bis zum Start</p>
+        <div id="countdown-target"></div>
+      </div>
+    </div>
+  `;
+  renderCountdown(document.getElementById('countdown-target'), next.startDate);
+
+  document.getElementById('more-tournaments').innerHTML = others.map(t => `
+    <div class="bg-tennis-light rounded-xl p-4">
+      <div class="flex items-center gap-2 mb-1">
+        <span class="text-xl">${t.flag}</span>
+        <span class="font-bold text-tennis-dark">${t.name}</span>
+      </div>
+      <p class="text-sm text-gray-600">${t.city} · ${t.surface}</p>
+      <p class="text-xs text-gray-500 mt-1">${fmt(t.startDate)} bis ${fmt(t.endDate)}</p>
+    </div>
+  `).join('');
+</script>
+
+<footer class="bg-tennis-dark text-gray-200 mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid md:grid-cols-4 gap-8">
+    <div>
+      <div class="flex items-center gap-2 mb-3">
+        <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-tennis-ball text-tennis-dark font-extrabold">TK</span>
+        <span class="font-extrabold text-xl text-white">Tennis-Kompass</span>
+      </div>
+      <p class="text-sm text-gray-300">Deutschlands Ratgeber für Tennis-Eltern. Wissen für den Start ins Tennisleben Ihres Kindes.</p>
+    </div>
+    <div>
+      <h3 class="font-semibold text-white mb-3">Ratgeber</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a class="hover:text-tennis-ball" href="kinderschlaeger.html">Kinderschläger</a></li>
+        <li><a class="hover:text-tennis-ball" href="kinderschuhe.html">Kinderschuhe</a></li>
+        <li><a class="hover:text-tennis-ball" href="vereine.html">Vereine finden</a></li>
+        <li><a class="hover:text-tennis-ball" href="tennisschule.html">Tennisschule</a></li>
+        <li><a class="hover:text-tennis-ball" href="liganu.html">Liga.nu</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold text-white mb-3">Wettkampf</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a class="hover:text-tennis-ball" href="medenspiele.html">Medenspiele</a></li>
+        <li><a class="hover:text-tennis-ball" href="turniere.html">Turniere</a></li>
+        <li><a class="hover:text-tennis-ball" href="kosten.html">Kosten</a></li>
+        <li><a class="hover:text-tennis-ball" href="eltern-kodex.html">Eltern-Kodex</a></li>
+        <li><a class="hover:text-tennis-ball" href="tennisprofi.html">Profi werden</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold text-white mb-3">Rechtliches</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a class="hover:text-tennis-ball" href="impressum.html">Impressum</a></li>
+        <li><a class="hover:text-tennis-ball" href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+      <p class="text-xs text-gray-400 mt-4">
+        Hinweis: Sobald Sie sich bei Partnerprogrammen anmelden, ergänzen wir die Pflichtangabe, zum Beispiel: Als Amazon-Partner verdienen wir an qualifizierten Verkäufen.
+      </p>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-4 text-center text-xs text-gray-400">
+    &copy; 2026 Tennis-Kompass. Alle Rechte vorbehalten.
+  </div>
+</footer>
+
+<!-- Cookie Banner (DSGVO) -->
+<div id="cookie-banner" class="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:bottom-6 md:max-w-sm bg-white border border-tennis/20 shadow-2xl rounded-2xl p-5 z-50 hidden">
+  <h3 class="font-semibold text-tennis-dark mb-2">Cookie-Hinweis</h3>
+  <p class="text-sm text-gray-700 mb-3">
+    Diese Seite verwendet nur technisch notwendige Cookies. Werbe- und Tracking-Cookies (zum Beispiel Google AdSense, Affiliate-Tracking) werden nur mit Ihrer Zustimmung gesetzt. Details in der <a href="datenschutz.html" class="underline">Datenschutzerklärung</a>.
+  </p>
+  <div class="flex flex-col sm:flex-row gap-2">
+    <button id="cookie-accept" class="bg-tennis text-white px-4 py-2 rounded-lg font-semibold hover:bg-tennis-dark transition flex-1">Alle akzeptieren</button>
+    <button id="cookie-essential" class="border border-tennis text-tennis px-4 py-2 rounded-lg font-semibold hover:bg-tennis-light transition flex-1">Nur notwendige</button>
+  </div>
+</div>
+<script>
+  (function() {
+    var banner = document.getElementById('cookie-banner');
+    if (!localStorage.getItem('tk-cookie-choice')) {
+      banner.classList.remove('hidden');
+    }
+    document.getElementById('cookie-accept').onclick = function() {
+      localStorage.setItem('tk-cookie-choice', 'all');
+      banner.classList.add('hidden');
+    };
+    document.getElementById('cookie-essential').onclick = function() {
+      localStorage.setItem('tk-cookie-choice', 'essential');
+      banner.classList.add('hidden');
+    };
+  })();
+</script>
+</body>
+</html>
