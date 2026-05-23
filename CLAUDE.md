@@ -31,8 +31,11 @@ Turniere, Medenspiele, Familiencamps, Eltern Kodex, Profi-Weg
 - Amazon Affiliate + weitere Partnerprogramme
 
 ## GitHub
-- Repo: orangenightcats/tenniskompass
+- Repo: tenniskompass/tenniskompass
 - Branch: main
 
-## userEmail
-The user's email address is mavis.cat@icloud.com.
+## Projektkontakt
+- E-Mail: tenniskompass@gmail.com
+- GitHub Secret SMTP_USERNAME: tenniskompass@gmail.com
+- GitHub Secret NOTIFY_EMAIL: tenniskompass@gmail.com
+- GitHub Secret SMTP_PASSWORD: Gmail App-Passwort (nicht im Repo gespeichert)

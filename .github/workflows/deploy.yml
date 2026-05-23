@@ -1,0 +1,102 @@
+name: Täglich bauen & deployen
+
+on:
+  schedule:
+    # Jeden Tag um 06:00 Uhr UTC (08:00 Uhr deutscher Sommerzeit)
+    - cron: '0 6 * * *'
+  push:
+    branches: [main]
+  workflow_dispatch: # Manueller Start über GitHub UI jederzeit möglich
+
+permissions:
+  contents: write   # Commit von aktualisierten Turnierdaten
+  pages: write      # Deployment auf GitHub Pages
+  id-token: write   # OIDC für Pages
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── 1. Repository auschecken ──────────────────────────────────────────
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ── 2. Node.js einrichten ─────────────────────────────────────────────
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # ── 3. Abhängigkeiten installieren ────────────────────────────────────
+      - name: Abhängigkeiten installieren
+        run: npm ci
+
+      # ── 4. Turnierdaten aktualisieren (Fehler werden ignoriert) ───────────
+      - name: Turnierdaten aus dem Internet holen
+        run: node scripts/fetch-tournaments.mjs
+        continue-on-error: true   # Build läuft immer weiter, auch wenn API nicht antwortet
+
+      # ── 5. Geänderte Turnierdaten committen (nur wenn nötig) ──────────────
+      - name: Turnierdaten committen
+        run: |
+          git config user.name  "Tenniskompass Bot"
+          git config user.email "bot@tenniskompass.de"
+          git add src/lib/tournaments.ts
+          git diff --staged --quiet \
+            || git commit -m "chore: Turnierdaten aktualisiert $(date +%Y-%m-%d)" \
+            && git push
+
+      # ── 6. Next.js Static Export bauen ───────────────────────────────────
+      - name: Webseite bauen
+        run: npm run build
+
+      # ── 7. CNAME in den Output kopieren (Custom Domain) ──────────────────
+      - name: CNAME kopieren
+        run: cp CNAME out/CNAME
+
+      # ── 8. Auf GitHub Pages deployen ──────────────────────────────────────
+      - name: Auf GitHub Pages deployen
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          user_name: 'Tenniskompass Bot'
+          user_email: 'bot@tenniskompass.de'
+
+      # ── 9. Bei Fehler: E-Mail senden ─────────────────────────────────────
+      - name: Fehler-E-Mail senden
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "⚠️ Tenniskompass – Build fehlgeschlagen ({{ date }})"
+          to: ${{ secrets.NOTIFY_EMAIL }}
+          from: "Tenniskompass CI <${{ secrets.SMTP_USERNAME }}>"
+          body: |
+            Hallo,
+
+            der automatische Build von Tenniskompass.de ist heute fehlgeschlagen.
+
+            ──────────────────────────────
+            Datum:    ${{ github.event.head_commit.timestamp || 'Geplanter Lauf' }}
+            Branch:   ${{ github.ref_name }}
+            Workflow: ${{ github.workflow }}
+            ──────────────────────────────
+
+            Details und Logs:
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            Bitte prüfe den Fehler und starte den Workflow manuell neu, sobald er behoben ist.
+
+            -- Tenniskompass CI

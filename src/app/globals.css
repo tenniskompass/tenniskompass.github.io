@@ -1,26 +1,188 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Brand color palette */
+  --color-tennis: #264c31;
+  --color-tennis-dark: #183320;
+  --color-tennis-ball: #c5b969;
+  --color-tennis-bg: #f0f5f1;
+  --color-tennis-light: #e8f0e9;
+  --color-tennis-muted: #4a7a58;
+  --color-tennis-border: #c8dccb;
+
+  /* Font families – set by next/font/google via CSS vars on <html> */
+  --font-display: var(--font-libre-bodoni), Georgia, serif;
+  --font-body: var(--font-public-sans), system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f5f1;
+  color: #183320;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Swiss Modernism article prose */
+.prose-tk h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #183320;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #c5b969;
+}
+
+.prose-tk h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #264c31;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-tk p {
+  margin-bottom: 1.25rem;
+  color: #1a2e1f;
+  line-height: 1.75;
+}
+
+.prose-tk ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.25rem;
+}
+
+.prose-tk ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1a2e1f;
+}
+
+.prose-tk ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  background-color: #c5b969;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.prose-tk ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  counter-reset: prose-counter;
+  list-style: none;
+}
+
+.prose-tk ol li {
+  position: relative;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  counter-increment: prose-counter;
+  color: #1a2e1f;
+}
+
+.prose-tk ol li::before {
+  content: counter(prose-counter) '.';
+  position: absolute;
+  left: -1.5rem;
+  color: #264c31;
+  font-weight: 700;
+}
+
+.prose-tk strong {
+  color: #183320;
+  font-weight: 700;
+}
+
+.prose-tk table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.prose-tk th {
+  background-color: #264c31;
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.prose-tk td {
+  padding: 0.625rem 1rem;
+  border-bottom: 1px solid #c8dccb;
+  color: #1a2e1f;
+}
+
+.prose-tk tr:nth-child(even) td {
+  background-color: #f0f5f1;
+}
+
+/* Highlight box */
+.highlight-box {
+  background-color: #e8f0e9;
+  border-left: 4px solid #264c31;
+  border-radius: 0 0.75rem 0.75rem 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(38, 76, 49, 0.12);
+}
+
+/* Animate fade in */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.5s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Mobile menu transition */
+.mobile-menu {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid #264c31;
+  outline-offset: 2px;
 }
