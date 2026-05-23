@@ -35,12 +35,9 @@ export default function Header() {
             <Link href="/turniere" className="text-tennis-dark hover:text-tennis transition-colors duration-150 cursor-pointer">
               Turniere
             </Link>
-            <a
-              href="/#newsletter"
-              className="bg-tennis-dark text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-tennis transition-colors duration-150 cursor-pointer"
-            >
-              Newsletter
-            </a>
+            <Link href="/turniere" className="bg-tennis-dark text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-tennis transition-colors duration-150 cursor-pointer">
+              Turnierkalender
+            </Link>
           </nav>
 
           {/* Mobile burger */}
@@ -73,13 +70,9 @@ export default function Header() {
           <Link href="/turniere" className="block font-medium text-tennis-dark py-1 cursor-pointer" onClick={() => setOpen(false)}>
             Turniere
           </Link>
-          <a
-            href="/#newsletter"
-            className="block font-semibold text-tennis py-1 cursor-pointer"
-            onClick={() => setOpen(false)}
-          >
-            Newsletter →
-          </a>
+          <Link href="/turniere" className="block font-semibold text-tennis py-1 cursor-pointer" onClick={() => setOpen(false)}>
+            Turnierkalender →
+          </Link>
         </div>
       )}
     </header>

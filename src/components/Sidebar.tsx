@@ -8,38 +8,6 @@ export default function Sidebar() {
       {/* Tournament countdown */}
       <TournamentCountdown />
 
-      {/* Newsletter */}
-      <div id="newsletter" className="bg-white border border-tennis-border rounded-2xl p-5">
-        <p className="text-xs font-bold uppercase tracking-widest text-tennis mb-2">Newsletter</p>
-        <h3
-          className="font-display font-bold text-tennis-dark text-lg mb-2 leading-tight"
-          style={{ fontFamily: 'var(--font-display)' }}
-        >
-          Tennis-Tipps direkt ins Postfach
-        </h3>
-        <p className="text-sm text-gray-600 mb-4 leading-relaxed">
-          Keine Werbung. Nur nützliche Infos für Tennis-Eltern – 1× im Monat.
-        </p>
-        <form className="space-y-2" onSubmit={(e) => e.preventDefault()} aria-label="Newsletter anmelden">
-          <label htmlFor="newsletter-email" className="sr-only">E-Mail-Adresse</label>
-          <input
-            id="newsletter-email"
-            type="email"
-            required
-            placeholder="ihre@email.de"
-            className="w-full px-4 py-2.5 border border-tennis-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-tennis focus:border-tennis transition-colors"
-            aria-label="E-Mail-Adresse"
-          />
-          <button
-            type="submit"
-            className="w-full bg-tennis-dark text-white py-2.5 rounded-lg font-semibold text-sm hover:bg-tennis transition-colors duration-150 cursor-pointer"
-          >
-            Anmelden
-          </button>
-        </form>
-        <p className="text-xs text-gray-400 mt-2">Abmeldung jederzeit möglich.</p>
-      </div>
-
       {/* Shop box */}
       <div className="bg-tennis-light border border-tennis-border rounded-2xl p-5">
         <p className="text-xs font-bold uppercase tracking-widest text-tennis mb-2">Empfehlung</p>

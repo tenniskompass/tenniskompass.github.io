@@ -49,7 +49,6 @@ export default function Footer() {
               {[
                 ['Impressum', '/impressum'],
                 ['Datenschutz', '/datenschutz'],
-                ['Newsletter', '/#newsletter'],
               ].map(([label, href]) => (
                 <li key={href}>
                   <Link href={href} className="text-white/70 hover:text-tennis-ball transition-colors duration-150 cursor-pointer">
