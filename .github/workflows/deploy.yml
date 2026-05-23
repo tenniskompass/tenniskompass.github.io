@@ -49,9 +49,12 @@ jobs:
           git config user.name  "Tenniskompass Bot"
           git config user.email "bot@tenniskompass.de"
           git add src/lib/tournaments.ts
-          git diff --staged --quiet \
-            || git commit -m "chore: Turnierdaten aktualisiert $(date +%Y-%m-%d)" \
-            && git push
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: Turnierdaten aktualisiert $(date +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
+          fi
+        continue-on-error: true
 
       # ── 6. Next.js Static Export bauen ───────────────────────────────────
       - name: Webseite bauen
