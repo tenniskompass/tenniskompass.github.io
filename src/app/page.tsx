@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { articles } from "@/lib/articles";
 import Sidebar from "@/components/Sidebar";
+import LiveTournamentBanner from "@/components/LiveTournamentBanner";
 
 export default function HomePage() {
   return (
@@ -58,6 +59,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── Live Tournament Banner (nur wenn Turnier läuft) ── */}
+      <LiveTournamentBanner />
 
       {/* ── Main content + sidebar ── */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
