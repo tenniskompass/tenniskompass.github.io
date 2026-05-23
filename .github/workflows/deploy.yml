@@ -60,9 +60,9 @@ jobs:
       - name: Webseite bauen
         run: npm run build
 
-      # ── 7. CNAME in den Output kopieren (Custom Domain) ──────────────────
+      # ── 7. CNAME in den Output kopieren (nur wenn Domain eingerichtet) ──────
       - name: CNAME kopieren
-        run: cp CNAME out/CNAME
+        run: '[ -f CNAME ] && cp CNAME out/CNAME || true'
 
       # ── 8. Auf GitHub Pages deployen ──────────────────────────────────────
       - name: Auf GitHub Pages deployen
