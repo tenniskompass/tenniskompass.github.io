@@ -46,7 +46,8 @@ async function run() {
     for (const meta of GRAND_SLAM_EVENTS) {
       try {
         const ev = await fetchEvent(meta.id, YEAR);
-        if (ev?.dateEvent) {
+        const eventYear = ev?.dateEvent ? new Date(ev.dateEvent).getFullYear() : 0;
+        if (ev?.dateEvent && eventYear >= YEAR) {
           fetched.push({
             ...meta,
             startDate: ev.dateEvent,
