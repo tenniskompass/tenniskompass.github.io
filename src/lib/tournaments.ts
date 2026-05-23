@@ -13,8 +13,8 @@ export const TOURNAMENTS: Tournament[] = [
   {
     name: "Roland Garros",
     shortName: "French Open",
-    startDate: "2020-11-28",
-    endDate: "2020-12-11",
+    startDate: "2026-05-25",
+    endDate: "2026-06-08",
     location: "Paris",
     surface: "Sand",
     type: "Grand Slam",
@@ -23,8 +23,8 @@ export const TOURNAMENTS: Tournament[] = [
   {
     name: "Wimbledon",
     shortName: "Wimbledon",
-    startDate: "2020-11-28",
-    endDate: "2020-12-11",
+    startDate: "2026-06-29",
+    endDate: "2026-07-12",
     location: "London",
     surface: "Rasen",
     type: "Grand Slam",
@@ -43,8 +43,8 @@ export const TOURNAMENTS: Tournament[] = [
   {
     name: "US Open",
     shortName: "US Open",
-    startDate: "2020-11-28",
-    endDate: "2020-12-11",
+    startDate: "2026-08-24",
+    endDate: "2026-09-06",
     location: "New York",
     surface: "Hart",
     type: "Grand Slam",
@@ -89,16 +89,6 @@ export const TOURNAMENTS: Tournament[] = [
     surface: "Hart (Indoor)",
     type: "ATP Finals",
     broadcast: "Sky Sport / Eurosport",
-  },
-  {
-    name: "Australian Open",
-    shortName: "Australian Open",
-    startDate: "2020-11-27",
-    endDate: "2020-12-10",
-    location: "Melbourne",
-    surface: "Hart",
-    type: "Grand Slam",
-    broadcast: "Eurosport",
   },
 ];
 
