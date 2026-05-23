@@ -32,9 +32,6 @@ export default function Header() {
             <Link href="/#ratgeber" className="text-tennis-dark hover:text-tennis transition-colors duration-150 cursor-pointer">
               Ratgeber
             </Link>
-            <Link href="/turniere" className="text-tennis-dark hover:text-tennis transition-colors duration-150 cursor-pointer">
-              Turniere
-            </Link>
             <Link href="/turniere" className="bg-tennis-dark text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-tennis transition-colors duration-150 cursor-pointer">
               Turnierkalender
             </Link>
