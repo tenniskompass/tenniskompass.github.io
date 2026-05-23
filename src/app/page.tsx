@@ -11,7 +11,7 @@ export default function HomePage() {
       <section className="relative bg-tennis-dark overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/banner.jpg"
+            src="/bilder/banner.jpg"
             alt="Tenniskompass – Ratgeber für Tennis-Eltern"
             fill
             className="object-cover opacity-30"
