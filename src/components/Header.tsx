@@ -12,9 +12,9 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5" aria-label="Tenniskompass Startseite">
-            <div className="w-9 h-9 rounded-lg bg-tennis-dark flex items-center justify-center flex-shrink-0">
-              <Image src="/logo.jpg" alt="Tenniskompass Logo" width={36} height={36} className="rounded-lg object-cover" />
+          <Link href="/" className="flex items-center gap-3" aria-label="Tenniskompass Startseite">
+            <div className="w-12 h-12 rounded-xl overflow-hidden flex-shrink-0 shadow-md ring-2 ring-tennis-ball/30">
+              <Image src="/logo.jpg" alt="Tenniskompass Logo" width={48} height={48} className="w-full h-full object-cover" />
             </div>
             <span
               className="font-display font-bold text-tennis-dark text-xl tracking-tight leading-none"
