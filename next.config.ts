@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
+  // Entfernen sobald tenniskompass.de eingerichtet ist
+  basePath: '/tenniskompass',
 };
 
 export default nextConfig;
