@@ -18,7 +18,7 @@ const NEXT_YEAR = YEAR + 1;
 // Grand Slam IDs on TheSportsDB (verified public IDs)
 const GRAND_SLAM_EVENTS = [
   { id: '1070184', name: 'Australian Open',   shortName: 'Australian Open',   surface: 'Hart',  broadcast: 'Eurosport',        type: 'Grand Slam' },
-  { id: '1070188', name: 'Roland Garros',      shortName: 'French Open',       surface: 'Sand',  broadcast: 'Eurosport',        type: 'Grand Slam' },
+  { id: '1070188', name: 'Roland Garros (French Open)', shortName: 'Roland Garros', surface: 'Sand',  broadcast: 'Eurosport',        type: 'Grand Slam' },
   { id: '1070190', name: 'Wimbledon',          shortName: 'Wimbledon',         surface: 'Rasen', broadcast: 'Sky Sport',         type: 'Grand Slam' },
   { id: '1070192', name: 'US Open',            shortName: 'US Open',           surface: 'Hart',  broadcast: 'Eurosport',        type: 'Grand Slam' },
 ];

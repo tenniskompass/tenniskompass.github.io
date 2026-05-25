@@ -11,8 +11,8 @@ export interface Tournament {
 
 export const TOURNAMENTS: Tournament[] = [
   {
-    name: "Roland Garros",
-    shortName: "French Open",
+    name: "Roland Garros (French Open)",
+    shortName: "Roland Garros",
     startDate: "2026-05-25",
     endDate: "2026-06-08",
     location: "Paris",
