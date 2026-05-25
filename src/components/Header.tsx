@@ -32,7 +32,7 @@ export default function Header() {
             <Link href="/#ratgeber" className="text-tennis-dark hover:text-tennis transition-colors duration-150 cursor-pointer">
               Ratgeber
             </Link>
-            <Link href="/turniere" className="bg-tennis-dark text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-tennis transition-colors duration-150 cursor-pointer">
+            <Link href="/turnierkalender" className="bg-tennis-dark text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-tennis transition-colors duration-150 cursor-pointer">
               Turnierkalender
             </Link>
           </nav>
@@ -64,10 +64,7 @@ export default function Header() {
           <Link href="/#ratgeber" className="block font-medium text-tennis-dark py-1 cursor-pointer" onClick={() => setOpen(false)}>
             Ratgeber
           </Link>
-          <Link href="/turniere" className="block font-medium text-tennis-dark py-1 cursor-pointer" onClick={() => setOpen(false)}>
-            Turniere
-          </Link>
-          <Link href="/turniere" className="block font-semibold text-tennis py-1 cursor-pointer" onClick={() => setOpen(false)}>
+          <Link href="/turnierkalender" className="block font-semibold text-tennis py-1 cursor-pointer" onClick={() => setOpen(false)}>
             Turnierkalender →
           </Link>
         </div>

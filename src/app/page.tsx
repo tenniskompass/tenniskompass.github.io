@@ -50,7 +50,7 @@ export default function HomePage() {
                 Ratgeber ansehen
               </a>
               <a
-                href="/turniere"
+                href="/turnierkalender"
                 className="border border-white/40 text-white px-6 py-3 rounded-xl font-semibold text-sm hover:bg-white/10 transition-colors duration-150 cursor-pointer"
               >
                 Turnierkalender
