@@ -20,7 +20,7 @@ export const articles: Article[] = [
     slug: 'kinderschuhe',
     title: 'Tennisschuhe für Kinder richtig auswählen',
     category: 'Schuhe',
-    description: 'Der Unterschied zwischen einem normalen Sportschuh und einem Tennisschuh liegt in Stabilität, Sohle und Verstärkung – für Kinder besonders wichtig.',
+    description: 'Der Unterschied zwischen einem normalen Sportschuh und einem Tennisschuh liegt in Stabilität, Sohle und Verstärkung, für Kinder besonders wichtig.',
     image: '/bilder/kinderschuhe.jpg',
     affiliate: true,
   },
@@ -85,7 +85,7 @@ export const articles: Article[] = [
     slug: 'tennisprofi',
     title: 'Der Weg zum Tennis-Profi',
     category: 'Karriere',
-    description: 'Profi werden ist ein Marathon. Realistisch schaffen es weniger als 1 von 10.000 Talenten in die Weltrangliste – doch der Weg ist oft wertvoll.',
+    description: 'Profi werden ist ein Marathon. Realistisch schaffen es weniger als 1 von 10.000 Talenten in die Weltrangliste, doch der Weg ist oft wertvoll.',
     image: '/bilder/tennisprofi.jpg',
   },
 ];

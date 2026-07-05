@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | Tenniskompass",
   },
   description:
-    "Der unabhängige Ratgeber für Tennis-Eltern in Deutschland. Vom ersten Schläger bis zum Mannschaftsspiel – klar erklärt, ohne Marketingfloskeln.",
+    "Der unabhängige Ratgeber für Tennis-Eltern in Deutschland. Vom ersten Schläger bis zum Mannschaftsspiel, klar erklärt, ohne Marketingfloskeln.",
   keywords: ["Tennis Eltern", "Kindertennisschläger", "Tennisverein Deutschland", "Medenspiele", "Liga.nu", "Tennisschuhe Kinder"],
   authors: [{ name: "Tenniskompass" }],
   openGraph: {

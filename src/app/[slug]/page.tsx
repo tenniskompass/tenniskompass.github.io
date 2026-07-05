@@ -121,20 +121,6 @@ export default async function ArticlePage({ params }: Props) {
             </div>
           )}
 
-          {/* Next step teaser */}
-          {next && (
-            <div className="mt-10 p-6 bg-white border-l-4 border-tennis-ball rounded-r-xl shadow-sm">
-              <p className="text-sm text-gray-600 mb-2">Weiter lesen:</p>
-              <Link
-                href={`/${next.slug}`}
-                className="font-semibold text-tennis hover:underline cursor-pointer"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
-                {next.title} →
-              </Link>
-            </div>
-          )}
-
           {/* Prev / Next navigation */}
           <nav
             className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4"

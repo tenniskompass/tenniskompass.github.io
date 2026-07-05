@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import TournamentCountdown from '@/components/TournamentCountdown';
 
 export const metadata: Metadata = {
-  title: 'Turnierkalender – ATP & Grand Slams',
+  title: 'Turnierkalender, ATP & Grand Slams',
   description: 'Countdown zu den nächsten großen Tennisturnieren: Australian Open, Roland Garros, Wimbledon, US Open und mehr.',
 };
 

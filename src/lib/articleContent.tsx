@@ -74,7 +74,7 @@ export const articleContent: Record<string, ArticleData> = {
         />
         <p>
           <strong>Knöcheltest:</strong> Lassen Sie Ihr Kind den Schläger im Stehen
-          seitlich am Körper halten – die Schlägerspitze sollte etwa knöchelhoch
+          seitlich am Körper halten, die Schlägerspitze sollte etwa knöchelhoch
           enden.
         </p>
 
@@ -82,8 +82,8 @@ export const articleContent: Record<string, ArticleData> = {
         <p>
           Kinderschläger zwischen 17 und 25 Zoll sind in der Regel aus Aluminium
           und fertig bespannt. Sie wiegen 180 bis 240 Gramm. Erst ab 26 Zoll
-          lohnen sich Composite- oder Graphit-Modelle. Der Griff sollte klein sein
-          – meistens Größe 0 oder 1. Ein zu dicker Griff zwingt das Kind in eine
+          lohnen sich Composite- oder Graphit-Modelle. Der Griff sollte klein
+          sein, meistens Größe 0 oder 1. Ein zu dicker Griff zwingt das Kind in eine
           falsche Handhaltung.
         </p>
 
@@ -94,7 +94,7 @@ export const articleContent: Record<string, ArticleData> = {
             Eltern kaufen oft eine Nummer größer, damit der Schläger länger hält.
             Das ist die häufigste Ursache für Tennisellenbogen bei Kindern. Lieber
             jedes Jahr ein passendes Modell als ein zu großes über mehrere Jahre.
-            Gebrauchte Schläger vom Vereinsflohmarkt sind eine gute Alternative.
+            Gebrauchte Schläger aus Online-Kleinanzeigen sind eine gute Alternative.
           </p>
         </Box>
 
@@ -108,7 +108,7 @@ export const articleContent: Record<string, ArticleData> = {
     ),
     affiliate: {
       title: "Kinderschläger bei unserem Partner",
-      text: "Kuratierte Auswahl an Kindertennisschlägern in den richtigen Größen – sortiert nach Alter und Körpergröße.",
+      text: "Kuratierte Auswahl an Kindertennisschlägern in den richtigen Größen, sortiert nach Alter und Körpergröße.",
       href: "https://www.amazon.de/s?k=kindertennisschläger&tag=DEIN_TAG",
       cta: "Schläger ansehen →",
     },
@@ -116,12 +116,12 @@ export const articleContent: Record<string, ArticleData> = {
 
   kinderschuhe: {
     metaDescription:
-      "Tennisschuhe für Kinder richtig auswählen: Sandplatz, Halle oder Allcourt – welche Sohle ist wann richtig, und worauf achten beim Kauf.",
+      "Tennisschuhe für Kinder richtig auswählen: Sandplatz, Halle oder Allcourt, welche Sohle ist wann richtig, und worauf achten beim Kauf.",
     intro: (
       <p>
         Der Unterschied zwischen einem normalen Sportschuh und einem Tennisschuh
         liegt in Stabilität, Sohle und Verstärkung. Für Kinder ist das besonders
-        wichtig – falsche Schuhe können auf Dauer Schäden verursachen.
+        wichtig, falsche Schuhe können auf Dauer Schäden verursachen.
       </p>
     ),
     content: (
@@ -130,12 +130,12 @@ export const articleContent: Record<string, ArticleData> = {
         <ul>
           <li>
             <strong>Sandplatz (Asche):</strong> Fischgrätenprofil, damit der Schuh
-            kontrolliert rutschen kann. Niemals Allcourt auf Sand – das zerstört den
+            kontrolliert rutschen kann. Niemals Allcourt auf Sand, das zerstört den
             Platz und den Schuh.
           </li>
           <li>
             <strong>Halle (Teppich):</strong> Komplett glatte Sohle ohne Profil.
-            Profil reißt den Teppich auf – viele Hallenbetreiber verbieten
+            Profil reißt den Teppich auf, viele Hallenbetreiber verbieten
             Profilsohlen ausdrücklich.
           </li>
           <li>
@@ -165,7 +165,7 @@ export const articleContent: Record<string, ArticleData> = {
 
         <h2>Klettverschluss oder Schnürsenkel?</h2>
         <p>
-          Bis ca. 8 Jahre ist Klettverschluss praktisch – kein Aufschnüren im
+          Bis ca. 8 Jahre ist Klettverschluss praktisch, kein Aufschnüren im
           Wechsel. Ab 8–9 Jahren sollten Kinder lernen, Schnürsenkel selbst zu
           binden, weil diese einen besseren Halt geben und häufiger in
           Junioren-Turnieren vorgeschrieben sind.
@@ -175,14 +175,14 @@ export const articleContent: Record<string, ArticleData> = {
         <p>
           Kaufen Sie Tennisschuhe eine halbe Nummer größer als die aktuelle
           Schuhgröße. Der Fuß braucht Bewegungsfreiheit nach vorne. Lassen Sie Ihr
-          Kind die Schuhe am besten nachmittags anprobieren – Füße schwellen im
+          Kind die Schuhe am besten nachmittags anprobieren, Füße schwellen im
           Tagesverlauf leicht an.
         </p>
       </div>
     ),
     affiliate: {
       title: "Tennisschuhe für Kinder",
-      text: "Sandplatz-, Hallen- und Allcourt-Schuhe in Kindergrößen – gefiltert nach Belag und Größe.",
+      text: "Sandplatz-, Hallen- und Allcourt-Schuhe in Kindergrößen, gefiltert nach Belag und Größe.",
       href: "https://www.amazon.de/s?k=kindertennisschuhe&tag=DEIN_TAG",
       cta: "Schuhe ansehen →",
     },
@@ -194,7 +194,7 @@ export const articleContent: Record<string, ArticleData> = {
     intro: (
       <p>
         Tennis lebt vom Verein. Anders als beim Fußball gibt es kaum Schulsport mit
-        Tennis – der erste Kontakt läuft fast immer über einen lokalen Verein.
+        Tennis, der erste Kontakt läuft fast immer über einen lokalen Verein.
         Deutschland hat rund 9.000 Tennisvereine im DTB.
       </p>
     ),
@@ -221,7 +221,7 @@ export const articleContent: Record<string, ArticleData> = {
         <h2>Schnupperstunden nutzen</h2>
         <p>
           Fast jeder Verein bietet kostenlose Schnupperstunden an. Nehmen Sie diese
-          wahr – sowohl für Ihr Kind als auch für Sie. Beobachten Sie, wie der
+          wahr, sowohl für Ihr Kind als auch für Sie. Beobachten Sie, wie der
           Trainer mit Kindern umgeht, ob die Gruppe harmoniert und ob die Anlage
           gepflegt ist.
         </p>
@@ -241,7 +241,7 @@ export const articleContent: Record<string, ArticleData> = {
           Jahresbeiträge für Kinder liegen meist zwischen 60 und 120 Euro. Dazu
           kommen Trainingsgebühren (200–500 Euro/Jahr) und oft eine
           Aufnahmegebühr (0–100 Euro, einmalig). Fragen Sie explizit nach der
-          Winterlösung – Vereine ohne eigene Halle verrechnen oft zusätzliche
+          Winterlösung, Vereine ohne eigene Halle verrechnen oft zusätzliche
           Hallenmiete.
         </p>
       </div>
@@ -254,7 +254,7 @@ export const articleContent: Record<string, ArticleData> = {
     intro: (
       <p>
         Trainerlizenz ist nicht gleich Trainerlizenz. Es lohnt sich, die
-        Qualifikation und die Methodik genau anzuschauen – besonders wenn Ihr Kind
+        Qualifikation und die Methodik genau anzuschauen, besonders wenn Ihr Kind
         von Anfang an die richtigen Grundlagen lernen soll.
       </p>
     ),
@@ -282,9 +282,18 @@ export const articleContent: Record<string, ArticleData> = {
           damit Kinder schneller ins Spiel kommen:
         </p>
         <ul>
-          <li><strong>Rote Bälle:</strong> Anfänger auf dem Kleinfeld (bis ca. 6 Jahre)</li>
-          <li><strong>Orange Bälle:</strong> Midcourt (ca. 7–9 Jahre)</li>
-          <li><strong>Grüne Bälle:</strong> Übergangsstadium zum Großfeld (ab ca. 10 Jahre)</li>
+          <li><strong>Rot (Stage 3):</strong> Für Kinder von rund 5 bis 8 (teilweise bis 9)
+          Jahren. Diese Bälle bestehen meist aus Schaumstoff oder weichem Filz, sind etwa
+          75 % langsamer als ein normaler Ball und springen sehr flach ab, gedacht fürs
+          Kleinfeld.</li>
+          <li><strong>Orange (Stage 2):</strong> Für 8- bis 10-Jährige. In normaler
+          Ballgröße, aber mit 50 % reduziertem Druck. Sie sind flotter als die roten Bälle
+          und erlauben auf dem Midcourt trotzdem längere Ballwechsel.</li>
+          <li><strong>Grün (Stage 1):</strong> Übergangsstufe für 10- bis 12-Jährige. Nur
+          noch 25 % langsamer als ein regulärer Tennisball, gespielt wird hier bereits auf
+          dem kompletten Großfeld.</li>
+          <li><strong>Gelb:</strong> Der klassische Standard-Tennisball für Spieler ab etwa
+          12 Jahren und für Erwachsene.</li>
         </ul>
         <Box>
           <p>
@@ -318,7 +327,7 @@ export const articleContent: Record<string, ArticleData> = {
     intro: (
       <p>
         Tennis ist nicht der teuerste Sport, aber auch nicht der günstigste. Wer
-        ehrlich rechnet, kommt im ersten Jahr auf 600 bis 1.500 Euro – je nach
+        ehrlich rechnet, kommt im ersten Jahr auf 600 bis 1.500 Euro, je nach
         Ambitionen und Winter-Situation.
       </p>
     ),
@@ -341,7 +350,7 @@ export const articleContent: Record<string, ArticleData> = {
         <Box>
           <p className="font-semibold text-tennis-dark mb-2">Achtung Winterkosten:</p>
           <p>
-            Vereine ohne eigene Halle weichen in fremde Hallen aus – das bedeutet
+            Vereine ohne eigene Halle weichen in fremde Hallen aus, das bedeutet
             zusätzliche Hallenmiete von 20 bis 35 Euro pro Stunde. Wer im Winter
             zweimal pro Woche spielt, zahlt schnell 600 bis 1.000 Euro zusätzlich.
             Fragen Sie vor dem Vereinsbeitritt explizit nach der Winterlösung.
@@ -352,23 +361,25 @@ export const articleContent: Record<string, ArticleData> = {
         <p>
           Eine Einzelstunde mit einem Trainer kostet 35 bis 70 Euro. Wer
           ambitioniert trainieren will, braucht mindestens eine Einzelstunde
-          pro Woche – das sind 1.500 bis 3.000 Euro zusätzlich im Jahr.
+          pro Woche, das sind 1.500 bis 3.000 Euro zusätzlich im Jahr.
         </p>
 
         <h2>Turnierstarts</h2>
         <p>
-          Nenngeld für Kinderturniere liegt meist bei 10 bis 20 Euro pro Konkurrenz.
-          Dazu kommen Anfahrt, ggf. Übernachtung und Verpflegung. Wer monatlich an
-          einem Turnier teilnimmt, rechnet mit 500 bis 1.500 Euro jährlich nur für
-          Turniere.
+          Das Nenngeld (auch Startgeld genannt) ist die fällige Gebühr für die
+          Teilnahme an einem Wettbewerb, Turnier oder Sportevent. Die genaue Höhe
+          steht immer in der Ausschreibung des Turniers und liegt bei
+          Kinderturnieren meist zwischen 15 und 55 Euro pro Konkurrenz. Dazu kommen
+          Anfahrt, ggf. Übernachtung und Verpflegung. Wer monatlich an einem Turnier
+          teilnimmt, rechnet mit 500 bis 1.500 Euro jährlich nur für Turniere.
         </p>
 
         <h2>Wie man spart</h2>
         <ul>
-          <li>Gebrauchte Schläger vom Vereinsflohmarkt (20–50 € statt 80–150 €)</li>
-          <li>Vereine mit eigener Halle suchen – kein Hallenmietzuschlag im Winter</li>
+          <li>Gebrauchte Schläger aus Online-Kleinanzeigen (20–50 € statt 80–150 €)</li>
+          <li>Vereine mit eigener Halle suchen, kein Hallenmietzuschlag im Winter</li>
           <li>Gruppentraining statt Einzeltraining für den Einstieg</li>
-          <li>Vereinsinterne Turniere (Vereinsmeisterschaft) sind oft kostenlos</li>
+          <li>Vereinsinterne Turniere (Clubmeisterschaft) sind oft kostenlos</li>
         </ul>
       </div>
     ),
@@ -381,7 +392,7 @@ export const articleContent: Record<string, ArticleData> = {
       <p>
         Liga.nu ist die offizielle Plattform des Deutschen Tennis Bundes für
         Mannschaftsspiele. Hier finden Sie Spielpläne, Aufstellungen und
-        Ergebnisse – wenn man weiß, wie das System funktioniert.
+        Ergebnisse, wenn man weiß, wie das System funktioniert.
       </p>
     ),
     content: (
@@ -390,14 +401,14 @@ export const articleContent: Record<string, ArticleData> = {
         <p>
           Liga.nu ersetzt seit einigen Jahren die alten Verbandsportale. Es ist die
           zentrale Plattform für den Wettkampfbetrieb des DTB. Jeder Landesverband
-          nutzt das System – der Aufbau ist überall identisch.
+          nutzt das System, der Aufbau ist überall identisch.
         </p>
 
         <h2>So finden Sie die Mannschaft Ihres Kindes</h2>
         <ol>
           <li>Auf liga.nu Ihren Landesverband auswählen</li>
-          <li>Im Menü „Mannschaften" oder „Spielklassen" wählen</li>
           <li>Über die Vereinssuche den eigenen Verein finden</li>
+          <li>Im Menü „Mannschaften" oder „Spielklassen" wählen</li>
           <li>Die Junioren-/Juniorinnen-Mannschaft anklicken</li>
         </ol>
         <p>
@@ -407,10 +418,14 @@ export const articleContent: Record<string, ArticleData> = {
 
         <h2>Die Mannschaftsaufstellung verstehen</h2>
         <p>
-          Die Aufstellung folgt der Mannschaftsmeldung, die der Verein vor der
-          Saison einreicht. Position 1 ist der stärkste Spieler, Position 6 der
-          schwächste. Die Reihenfolge muss eingehalten werden – kein Kind darf
-          besser platziert starten als ein stärkeres Kind aus derselben Mannschaft.
+          Die Aufstellung folgt der namentlichen Mannschaftsmeldung, die der Verein
+          vor der Saison einreicht. Darin werden alle gemeldeten Kinder (auch Ersatz-
+          und Doppelspieler) in der Reihenfolge ihrer Spielstärke aufgeführt, bei der
+          Jugend nach Leistungsklasse (LK). Position 1 ist das stärkste Kind. Wie
+          viele Positionen es gibt, ist nicht fest, sondern hängt davon ab, wie viele
+          Kinder gemeldet sind, das können je nach Verein auch deutlich mehr als
+          sechs sein. Die Reihenfolge muss eingehalten werden, kein Kind darf besser
+          platziert starten als ein stärkeres Kind aus derselben Mannschaft.
         </p>
 
         <h2>Die Leistungsklasse (LK)</h2>
@@ -449,10 +464,10 @@ export const articleContent: Record<string, ArticleData> = {
       <div className="prose-tk">
         <h2>Was ist Nenngeld?</h2>
         <p>
-          Nenngeld ist die Anmeldegebühr für ein Turnier. Bei Kindern liegt sie
-          meist zwischen 10 und 20 Euro pro Konkurrenz. Das Geld fließt an den
-          ausrichtenden Verein, weil dieser Plätze, Bälle, Schiedsrichter und
-          Preise stellt.
+          Nenngeld (auch Startgeld genannt) ist die Anmeldegebühr für ein Turnier.
+          Bei Kindern liegt sie meist zwischen 15 und 55 Euro pro Konkurrenz und
+          steht immer in der Ausschreibung. Das Geld fließt an den ausrichtenden
+          Verein, weil dieser Plätze, Bälle, Schiedsrichter und Preise stellt.
         </p>
 
         <h2>Anmeldung über tennis.de</h2>
@@ -482,7 +497,7 @@ export const articleContent: Record<string, ArticleData> = {
           <p className="font-semibold text-tennis-dark mb-1">Empfehlung für Einsteiger:</p>
           <p>
             Beginnen Sie mit „Tagesturnieren" (auch Spiralturniere genannt). Alle
-            Kinder spielen mehrere Partien – niemand fährt früh nach Hause.
+            Kinder spielen mehrere Partien, niemand fährt früh nach Hause.
             Das Spiralsystem gruppiert Gleichstarke automatisch nach den ersten
             Runden.
           </p>
@@ -492,7 +507,7 @@ export const articleContent: Record<string, ArticleData> = {
         <p>
           Populäre Turniere sind schnell ausgebucht. Meldeschluss ist oft 10 bis 14
           Tage vor dem Turnier. Tragen Sie sich in den Kalender ein und melden Sie
-          früh an. Viele Portale zeigen auch Wartelisten an – es lohnt sich, dort
+          früh an. Viele Portale zeigen auch Wartelisten an, es lohnt sich, dort
           eingetragen zu bleiben.
         </p>
       </div>
@@ -505,7 +520,7 @@ export const articleContent: Record<string, ArticleData> = {
     intro: (
       <p>
         Medenspiele sind die Mannschaftsmeisterschaften im deutschen Tennis. Wer
-        vom Fußball kommt, kennt das Konzept – aber die Regeln unterscheiden sich
+        vom Fußball kommt, kennt das Konzept, aber die Regeln unterscheiden sich
         deutlich.
       </p>
     ),
@@ -522,7 +537,7 @@ export const articleContent: Record<string, ArticleData> = {
         <h2>Saisonstruktur und Spieltage</h2>
         <p>
           Die Sommersaison läuft von Mai bis Juli. In dieser Zeit gibt es meistens
-          5 bis 7 Spieltage – die Mannschaft spielt entweder zu Hause oder fährt zu
+          5 bis 7 Spieltage, die Mannschaft spielt entweder zu Hause oder fährt zu
           einem anderen Verein. Im Winter gibt es analog dazu Hallenrunden, oft kürzer.
         </p>
 
@@ -545,7 +560,7 @@ export const articleContent: Record<string, ArticleData> = {
         <h2>Ein Spieltag in der Praxis</h2>
         <p>
           Ein Medenspiel-Tag beginnt morgens um 10 Uhr und endet mittags. Die
-          Kinder spielen Einzel – je nach Mannschaftsgröße 4 oder 6 Einzel. Danach
+          Kinder spielen Einzel, je nach Mannschaftsgröße 4 oder 6 Einzel. Danach
           folgen Doppel. Das Ergebnis entscheidet über Aufstieg oder Abstieg am
           Saisonende.
         </p>
@@ -578,7 +593,7 @@ export const articleContent: Record<string, ArticleData> = {
           Ein Tennis-Camp ist eine Urlaubswoche, in der Kinder vor- oder nachmittags
           mehrere Stunden Training bekommen. Eltern können entweder selbst
           mittrainieren oder Urlaub machen. Die Camps finden meistens in Spanien,
-          Italien, Türkei oder Kroatien statt – in Deutschland gibt es sie ebenfalls.
+          Italien, Türkei oder Kroatien statt, in Deutschland gibt es sie ebenfalls.
         </p>
 
         <h2>Worauf bei der Buchung achten</h2>
@@ -588,7 +603,7 @@ export const articleContent: Record<string, ArticleData> = {
           <li>Altersgerechtes Training, getrennt nach Alter und Spielstärke</li>
           <li>Genug Plätze für die Anzahl der Teilnehmer</li>
           <li>Ausreichend Pausen und Erholung</li>
-          <li>Klimatabelle prüfen – Sommerhitze in Spanien ist im Juli/August oft zu viel für Kinder</li>
+          <li>Klimatabelle prüfen, Sommerhitze in Spanien ist im Juli/August oft zu viel für Kinder</li>
         </ul>
 
         <Box>
@@ -640,7 +655,7 @@ export const articleContent: Record<string, ArticleData> = {
         <p>
           Ihre Aufgabe ist es nicht, Tennis zu lehren. Ihre Aufgabe ist es, das
           emotionale Fundament zu sein. Loben Sie Anstrengung, nicht Ergebnis.
-          Vertrauen Sie dem Trainer – Kritik am Trainer vor dem Kind schadet dem
+          Vertrauen Sie dem Trainer, Kritik am Trainer vor dem Kind schadet dem
           sportlichen Erfolg massiv.
         </p>
 
@@ -648,7 +663,7 @@ export const articleContent: Record<string, ArticleData> = {
         <p>
           Bei Kindertennis gibt es keine Schiedsrichter. Die Kinder zählen selbst,
           treffen Aus-Entscheidungen selbst und kümmern sich um den Spielstand.
-          Coaching von außen ist verboten – weil es die Selbstständigkeit zerstört.
+          Coaching von außen ist verboten, weil es die Selbstständigkeit zerstört.
           Auch nonverbal: kein Daumen hoch nach jedem Punkt, kein Kopfschütteln bei
           Fehlern.
         </p>
@@ -656,7 +671,7 @@ export const articleContent: Record<string, ArticleData> = {
         <h2>Die Macht der Körpersprache</h2>
         <p>
           Kinder sehen jede Reaktion. Augenrollen, enttäuschte Mienen,
-          demonstratives Wegschauen – alles registrieren sie. Studien zeigen, dass
+          demonstratives Wegschauen, alles registrieren sie. Studien zeigen, dass
           Kinder, deren Eltern aktiv schweigen und positiv reagieren, länger im
           Sport bleiben und mehr Freude entwickeln.
         </p>
@@ -664,18 +679,18 @@ export const articleContent: Record<string, ArticleData> = {
         <Box>
           <p className="font-semibold text-tennis-dark mb-3">5 goldene Regeln für Tennis-Eltern:</p>
           <ol>
-            <li>Jubeln ist erlaubt – Anweisungen nicht</li>
-            <li>Verlieren ist kein Versagen – es ist Information</li>
+            <li>Jubeln ist erlaubt, Anweisungen nicht</li>
+            <li>Verlieren ist kein Versagen, es ist Information</li>
             <li>Nach dem Match: keine Analyse, kein „Du hättest..."</li>
-            <li>Dem Trainer vertrauen – auch wenn Sie anderer Meinung sind</li>
-            <li>Ihr Kind ist im Sport für sich selbst – nicht für Sie</li>
+            <li>Dem Trainer vertrauen, auch wenn Sie anderer Meinung sind</li>
+            <li>Ihr Kind ist im Sport für sich selbst, nicht für Sie</li>
           </ol>
         </Box>
 
         <h2>Unabhängigkeit fördern</h2>
         <p>
           Tennis ist ein Einzelsport. Ihr Kind muss lernen, allein Probleme zu
-          lösen – taktisch, emotional, unter Druck. Wer von klein auf gewohnt ist,
+          lösen, taktisch, emotional, unter Druck. Wer von klein auf gewohnt ist,
           dass Eltern die Lösung liefern, wird auf dem Platz blockieren. Lassen Sie
           Ihr Kind auch verlieren, und lassen Sie es damit umgehen.
         </p>
@@ -690,7 +705,7 @@ export const articleContent: Record<string, ArticleData> = {
       <p>
         Profi werden ist ein Marathon. Realistisch schaffen es weniger als 1 von
         10.000 Talenten in die Weltrangliste. Trotzdem ist der Weg dorthin oft
-        wertvoll – auch wenn das Endziel nicht erreicht wird.
+        wertvoll, auch wenn das Endziel nicht erreicht wird.
       </p>
     ),
     content: (
@@ -743,7 +758,7 @@ export const articleContent: Record<string, ArticleData> = {
           Wer unter den Top 500 der Junioren-Weltrangliste landet, hat gute
           Chancen auf ein Tennis-Stipendium in den USA. US-Universitäten bieten
           Spielern vollfinanzierte Studienplätze. Ein Studium und hochwertiges
-          Tennis lassen sich dort kombinieren – ein attraktiver Weg, auch wenn der
+          Tennis lassen sich dort kombinieren, ein attraktiver Weg, auch wenn der
           Profitraum nicht in Reichweite ist.
         </p>
       </div>

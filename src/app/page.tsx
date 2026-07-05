@@ -12,7 +12,7 @@ export default function HomePage() {
         <div className="absolute inset-0">
           <Image
             src="/bilder/banner.jpg"
-            alt="Tenniskompass – Ratgeber für Tennis-Eltern"
+            alt="Tenniskompass, Ratgeber für Tennis-Eltern"
             fill
             className="object-cover opacity-30"
             priority
@@ -39,7 +39,7 @@ export default function HomePage() {
               {" "}Wir erklären den Rest.
             </h1>
             <p className="text-white/75 text-lg leading-relaxed mb-8 max-w-xl">
-              Vom ersten Schläger bis zum Mannschaftsspiel – 11 Themen, die jeden Tennis-Elternteil in
+              Vom ersten Schläger bis zum Mannschaftsspiel, 11 Themen, die jeden Tennis-Elternteil in
               den ersten Jahren beschäftigen. Klar geschrieben, ohne Marketingfloskeln.
             </p>
             <div className="flex flex-wrap gap-3">

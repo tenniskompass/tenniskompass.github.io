@@ -18,7 +18,7 @@ export default function Sidebar() {
           Tennis-Ausrüstung bei unserem Partner
         </h3>
         <p className="text-sm text-gray-600 mb-4 leading-relaxed">
-          Schläger, Schuhe und Zubehör – kuratiert für Kinder und Jugendliche.
+          Schläger, Schuhe und Zubehör, kuratiert für Kinder und Jugendliche.
         </p>
         {/* Affiliate placeholder */}
         <a
