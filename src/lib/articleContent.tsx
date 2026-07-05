@@ -421,11 +421,7 @@ export const articleContent: Record<string, ArticleData> = {
           Die Aufstellung folgt der namentlichen Mannschaftsmeldung, die der Verein
           vor der Saison einreicht. Darin werden alle gemeldeten Kinder (auch Ersatz-
           und Doppelspieler) in der Reihenfolge ihrer Spielstärke aufgeführt, bei der
-          Jugend nach Leistungsklasse (LK). Position 1 ist das stärkste Kind. Wie
-          viele Positionen es gibt, ist nicht fest, sondern hängt davon ab, wie viele
-          Kinder gemeldet sind, das können je nach Verein auch deutlich mehr als
-          sechs sein. Die Reihenfolge muss eingehalten werden, kein Kind darf besser
-          platziert starten als ein stärkeres Kind aus derselben Mannschaft.
+          Jugend nach Leistungsklasse (LK). Position 1 ist das stärkste Kind.
         </p>
 
         <h2>Die Leistungsklasse (LK)</h2>
